@@ -99,8 +99,12 @@ else:
         add("IMPORTANT", "No obvious setup instructions",
             "Add an Installation or Quick Start section.")
 
-    if not any(x in readme_text for x in
-               ("tech stack", "technology", "built with", "tech:", "**tech:**")):
+    tech_markers = (
+        "tech stack", "technology", "built with", "tech:", "**tech:**",
+        "python", "fastapi", "next.js", "nextjs", "react", "typescript",
+        "javascript", "docker", "kubernetes", "nginx"
+    )
+    if not any(x in readme_text for x in tech_markers):
         add("POLISH", "Tech stack is not obvious",
             "Make technologies easy to scan.")
 
