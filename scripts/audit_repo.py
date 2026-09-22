@@ -40,7 +40,12 @@ sensitive = re.compile(
     r"(^|/)(\.env|id_rsa|id_ed25519|credentials?|secrets?)(\.|$)", re.I
 )
 
+safe_env_files = {".env.example", ".env.template", ".env.sample"}
+
 for f in tracked:
+    name = Path(f).name
+    if name in safe_env_files:
+        continue
     if sensitive.search(f):
         add("BLOCKER", "Sensitive-looking file is tracked", f)
 
@@ -95,7 +100,7 @@ else:
             "Add an Installation or Quick Start section.")
 
     if not any(x in readme_text for x in
-               ("tech stack", "technology", "built with")):
+               ("tech stack", "technology", "built with", "tech:", "**tech:**")):
         add("POLISH", "Tech stack is not obvious",
             "Make technologies easy to scan.")
 
