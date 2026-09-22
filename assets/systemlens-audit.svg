@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+  <rect width="1400" height="820" fill="#0d1117"/>
+  <rect x="0" y="0" width="1400" height="56" fill="#161b22"/>
+  <circle cx="28" cy="28" r="8" fill="#ff5f56"/>
+  <circle cx="54" cy="28" r="8" fill="#ffbd2e"/>
+  <circle cx="80" cy="28" r="8" fill="#27c93f"/>
+  <text x="118" y="36" fill="#c9d1d9" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">Repo Doctor — SystemLens audit</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22" fill="#c9d1d9">
+    <text x="48" y="104" fill="#58a6ff"># Repo Doctor Report</text>
+    <text x="48" y="150">Repository: /var/www/systemlens</text>
+    <text x="48" y="194">Score: <tspan fill="#3fb950" font-weight="700">97/100</tspan></text>
+    <text x="48" y="238">Release verdict: <tspan fill="#3fb950" font-weight="700">READY</tspan></text>
+    <text x="48" y="304" fill="#58a6ff">## Blocker</text>
+    <text x="48" y="348" fill="#8b949e">None.</text>
+    <text x="48" y="414" fill="#58a6ff">## Important</text>
+    <text x="48" y="458" fill="#8b949e">None.</text>
+    <text x="48" y="524" fill="#58a6ff">## Polish</text>
+    <text x="48" y="568">- No screenshot or demo media</text>
+    <text x="48" y="612" fill="#8b949e">  Add at least one screenshot or demo when applicable.</text>
+    <text x="48" y="680" fill="#58a6ff">## Recommended next actions</text>
+    <text x="48" y="724">1. No screenshot or demo media</text>
+  </g>
+  <rect x="1020" y="116" width="300" height="126" rx="18" fill="#0f2d1f" stroke="#238636" stroke-width="2"/>
+  <text x="1170" y="166" text-anchor="middle" fill="#7ee787" font-family="Arial, sans-serif" font-size="20">RELEASE STATUS</text>
+  <text x="1170" y="212" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">READY</text>
+</svg>
