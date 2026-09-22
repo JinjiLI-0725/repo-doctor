@@ -6,6 +6,38 @@ Repo Doctor checks a repository for security mistakes, missing documentation, in
 
 Built for people using AI coding agents who want to publish projects without accidentally exposing secrets or shipping a confusing GitHub repository.
 
+## See it in action
+
+Repo Doctor audited [SystemLens](https://github.com/JinjiLI-0725/systemlens) after it was prepared for public release.
+
+<p align="center">
+  <img src="assets/systemlens-audit.svg" alt="Repo Doctor auditing SystemLens with a 97/100 READY result" width="100%" />
+</p>
+
+### Example output
+
+```text
+# Repo Doctor Report
+
+Repository: /var/www/systemlens
+Score: 97/100
+Release verdict: READY
+
+Blocker
+None.
+
+Important
+None.
+
+Polish
+- No screenshot or demo media
+
+Recommended next actions
+1. No screenshot or demo media
+```
+
+This is the kind of result Repo Doctor is designed for: **clear enough to act on immediately, without exposing secret values.**
+
 ## What it checks
 
 ### 🔐 Security
